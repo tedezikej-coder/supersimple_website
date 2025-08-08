@@ -1,0 +1,110 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(Images/tree.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 35px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.2); 
+  z-index: 0;
+  pointer-events: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  margin-right: 10%;
+  color: rgb(241, 99, 17);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 150px;
+}
+.header img {
+  width: 25px;
+  margin-left: -150px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+}
+
+ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+ul li a.active {
+  color: rgb(241, 99, 17);
+  font-weight: bold;
+}
+ul li a.bold {
+  font-weight: bold;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 190px;
+  gap: 3px;
+}
+
+.left_content{
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+}
+
+.h1{
+width: 30%;
+max-width: 60%;
+font-size: 29px;
+margin-bottom: 5px;
+color: white;
+}
+
+.pg{
+width: 45%;
+font-size: 20px;
+color: white;
+margin-bottom: 25px;
+}
+
+.btn button{
+  padding: 13px;
+  font-size: 20px;
+  font-weight: light;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  width: 15%;
+  background-color: rgb(241, 99, 17);
+}
+
+.diff_col{
+  color: rgb(241, 99, 17);
+  display: flex;
+}
